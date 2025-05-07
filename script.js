@@ -7,7 +7,7 @@ function prikaziInfo() {
             <li>Povećana snaga</li>
             <li>Ali i mogući ozbiljni neželjeni efekti</li>
         </ul>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Bodybuilder.jpg/640px-Bodybuilder.jpg"alt="Bodybuilder slika">
+        <img src="https://personalnitrening.rs/wp-content/uploads/2020/02/steroidi-pocetna-strana-1024x569-compressor.jpg"alt="Bodybuilder slika">
     `;
     document.getElementById("infoBox").innerHTML = info;
 }
