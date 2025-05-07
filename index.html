@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovanov Sajt o Steroidima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jovanov Sajt o Steroidima</h1>
+    </header>
+
+    <nav>
+        <a href="#">Početna</a>
+        <a href="#glasanje">Glasanje</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <p>Dobrodošli! Na ovom sajtu možete naučiti osnovne informacije o steroidima, njihovim efektima i rizicima.</p>
+
+        <h2>Slika molekula testosterona:</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Testosterone.svg" alt="Testosteron molekul">
+
+        <div class="info" id="infoBox"></div>
+        <button onclick="prikaziInfo()">Prikaži više informacija</button>
+
+        <!-- Glasanje -->
+        <div class="vote" id="glasanje">
+            <h2>Glasaj: Koji je najbolji steroid?</h2>
+            <select id="glasanjeOpcije">
+                <option value="Testosteron">Testosteron</option>
+                <option value="Dianabol">Dianabol</option>
+                <option value="Anavar">Anavar</option>
+                <option value="Trenbolon">Trenbolon</option>
+            </select>
+            <button onclick="glasaj()">Glasaj</button>
+            <p id="glasanjeRezultat"></p>
+        </div>
+
+        <!-- Kontakt forma -->
+        <div class="contact" id="kontakt">
+            <h2>Kontaktiraj nas</h2>
+            <form onsubmit="posaljiPoruku(event)">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="poruka">Poruka:</label>
+                <textarea id="poruka" rows="5" required></textarea>
+
+                <button type="submit">Pošalji</button>
+            </form>
+            <p id="porukaPotvrda"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
